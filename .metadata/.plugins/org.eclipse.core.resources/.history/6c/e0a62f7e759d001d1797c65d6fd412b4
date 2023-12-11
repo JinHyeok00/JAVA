@@ -1,0 +1,46 @@
+package classTest;
+
+import java.util.Scanner;
+
+class SuperCar{
+	String brand;
+	String color;
+	boolean engine
+	int price;
+	String password;
+	
+	//초기화 블록
+	{
+		this.password = "0000";
+	}
+	
+	// ctr + space
+	public SuperCar() {;}
+	
+	
+	// alt + shift + o
+	public SuperCar(String brand, String color, int price) {
+		this.brand = brand;
+		this.color = color;
+		this.price = price;
+	}
+
+	
+	boolean engineStart() {
+		if(!engine) {
+			engine = true;
+			return true;
+		}
+		return false;
+	}
+	
+	
+//	시동 켜기 위해서 비밀번호 4자리를 입력받아야 한다.
+// 	3번 연속 잘못 입력했을 시 "경찰 출동" 출력
+}
+
+public class ClassTask1 {
+	public static void main(String[] args) {
+		SuperCar mom = new SuperCar("페라리", "빨간색", 68_000);
+	}
+}

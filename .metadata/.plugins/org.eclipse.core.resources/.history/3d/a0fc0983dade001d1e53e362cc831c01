@@ -1,0 +1,15 @@
+package abstractTest;
+
+import java.util.Iterator;
+
+public class Test {
+	public static void main(String[] args) {
+	}
+}
+
+class Solution {
+    public int[] solution(int[] grade) {
+        int[] answer = new int[grade.length];
+        return answer;
+    }
+}

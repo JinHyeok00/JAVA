@@ -1,0 +1,20 @@
+package threadTask;
+
+public class Animal {
+
+	public void makeSound(Runnable runnable) {
+		String[] sounds = {"览局","具克","港港"};
+		Thread[] threads = new Thread[sounds.length];
+		
+		for (int i = 0; i < threads.length; i++) {
+			threads[i] = new Thread(runnable,sounds[i]);
+		}
+		
+		for (int i = 0; i < threads.length; i++) {
+			threads[i].start();
+			if(i != 0) {
+				try {threads[i].join();} catch (InterruptedException e) {}
+			}
+		}
+	}
+}

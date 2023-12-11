@@ -1,0 +1,24 @@
+package classTest;
+
+class store{
+	String productName;
+	int productPrice;
+	int stock;
+	
+	public store() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}
+
+class customer{
+	String name;
+	String phoneNumber;
+	int balance;
+	int discountRate;
+}
+
+public class ClassTask2 {
+	
+}

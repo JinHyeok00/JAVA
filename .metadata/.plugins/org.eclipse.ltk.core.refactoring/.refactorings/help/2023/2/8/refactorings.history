@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;calcStep1.purson&apos; to &apos;Purson&apos;&#x0D;&#x0A;- Original project: &apos;help&apos;&#x0D;&#x0A;- Original element: &apos;calcStep1.purson&apos;&#x0D;&#x0A;- Renamed element: &apos;calcStep1.Purson&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;purson&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;calcStep1{purson.java[purson" matchStrategy="1" name="Purson" qualified="false" references="true" similarDeclarations="false" stamp="1677318565499" textual="false" version="1.0"/>
+</session>

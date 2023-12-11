@@ -1,0 +1,35 @@
+package abstractTest;
+
+import java.util.Iterator;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		int a = 3;
+		double b = 2;
+		System.out.println(b/a);
+		int[][] d = {{1,2},
+						{3,4},
+							{5,6}};
+		System.out.println(d[2][2]);
+	}
+	
+}
+
+class Solution {
+	public int solution(int speed_limit, int[][] cameras) {
+		int answer = -1;
+		answer = 0;
+		for (int i = 0; i < cameras.length - 1; i++) {
+			double a=cameras[i + 1][0] - cameras[i][0];
+			double b=cameras[i + 1][1] - cameras[i][1];
+			double c = a/b;
+			if (speed_limit <= c) {
+				answer++;
+			}
+
+
+		}
+		return answer;
+	}
+}

@@ -1,0 +1,16 @@
+package abstractTest;
+
+public class Test {
+	public static void main(String[] args) {
+		int[][] carmeras = new int[3][3];
+		System.out.println(carmeras[1].length);
+	}
+}
+
+class Solution {
+    public int solution(int speed_limit, int[][] cameras) {
+        int answer = -1;
+        
+        return answer;
+    }
+}

@@ -1,0 +1,33 @@
+package abstractTest;
+
+import java.util.Iterator;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		int a = 3;
+		double b = 2;
+		System.out.println(b/a);
+		int[][] d = {{1,2},
+						{3,4},
+							{5,6}};
+		System.out.println(d[2][1]);
+	}
+	
+}
+
+class Solution {
+    public int[][] solution(int N, int[][] bus_stop) {
+        int[][] answer = {};
+        for (int i = 0; i < bus_stop.length; i++) {
+        	for (int j = 0; j < N-1; j++) {
+				for (int j2 = 0; j2 < N-1; j2++) {
+					
+				}
+			}
+		}
+        
+        
+        return answer;
+    }
+}

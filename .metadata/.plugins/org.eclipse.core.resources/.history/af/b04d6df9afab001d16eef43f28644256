@@ -1,0 +1,16 @@
+package stream;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class MyStreamTest {
+	public static void main(String[] args) {
+//		Arrays.aslist()
+//		toArray()[Index];
+		Integer[] arData = {10,20,30,40,50};
+		List<Integer> datas = new ArrayList<Integer>(Arrays.asList(arData));
+		System.out.println(datas);
+		arData = (Integer[])datas.toArray();	//?
+	}
+}

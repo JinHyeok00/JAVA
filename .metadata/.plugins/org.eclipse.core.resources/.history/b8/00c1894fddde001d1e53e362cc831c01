@@ -1,0 +1,38 @@
+package abstractTest;
+
+import java.util.Iterator;
+
+public class Test {
+	public static void main(String[] args) {
+	}
+}
+
+class Solution {
+    public int[] solution(int[] grade) {
+        int[] answer = new int[grade.length];
+        int temp = 0;
+        int count = 0;
+        
+        for(int j= 1; j<=grade.length; j=j+count) {
+        	count = 0;
+            for (int i  = 0; i < grade.length; i++) {
+    			if(grade[i] > temp) {
+    				temp = grade[i];
+    			}
+    		}
+            for (int i = 0; i < answer.length; i++) {
+    			if(temp==grade[i]) {
+    				grade[i] = 0;
+    				answer[i]= j;
+    				count ++;
+    			}
+    		}
+        }
+        
+
+        
+        
+        
+        return answer;
+    }
+}

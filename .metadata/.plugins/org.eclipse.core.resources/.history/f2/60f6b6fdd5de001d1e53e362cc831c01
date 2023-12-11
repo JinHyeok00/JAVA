@@ -1,0 +1,23 @@
+package abstractTest;
+
+import java.util.Iterator;
+
+public class Test {
+	public static void main(String[] args) {
+		int[][] carmeras = new int[3][3];
+		System.out.println(carmeras[1].length);
+	}
+}
+
+class Solution {
+	public int solution(int speed_limit, int[][] cameras) {
+        int answer = -1;
+        for (int i = 0; i < cameras.length-1; i++) {
+        	if(speed_limit>(cameras[i][0]-cameras[i-1][0])/(cameras[i][1]-cameras[i-1][1])) {
+        		
+        	}
+
+		}
+        return answer;
+    }
+}
